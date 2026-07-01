@@ -1,4 +1,19 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
-  background-color: black;
+  padding: 0;
+  background-color: #0f172a;
+  font-family: Poppins;
+  min-height: 100vh;
+}
+.container {
+  color: white;
+  margin: 15px auto;
+  background-color: #1e293b;
+  max-width: 900px;
+  width: 80%;
+  padding: 30px;
+  border-radius: 20px;
 }
