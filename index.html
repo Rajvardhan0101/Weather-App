@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-bar">
+        <div class="logo">
+          <h2>Weather Now</h2>
+        </div>
+
+        <select id="temperature-unit">
+          <option value="c">°C</option>
+          <option value="f">°F</option>
+        </select>
+      </nav>
+
+      <section class="hero">
+        <h1>How's the sky looking today</h1>
+
+        <form class="search-bar">
+          <input
+            type="text"
+            placeholder="Search for a city..."
+            id="city-input"
+          />
+
+          <button type="submit" id="search-btn">Search</button>
+        </form>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard">
+        <section class="left-panel">
+          <!-- current weather -->
+          <div class="current-weather"></div>
+          <!-- weather details -->
+          <div class="weather-details"></div>
+          <!-- Daily forecast -->
+          <div class="daily-forecast"></div>
+        </section>
+        <!-- Hourly forecast -->
+        <aside class="hourly-forecast"></aside>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
