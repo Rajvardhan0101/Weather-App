@@ -12,8 +12,68 @@ body {
   color: white;
   margin: 15px auto;
   background-color: #1e293b;
-  max-width: 900px;
+  max-width: 1200px;
   width: 80%;
   padding: 30px;
   border-radius: 20px;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  gap: 10px;
+}
+.logo h2 {
+  font-weight: 600;
+}
+#temperature-unit {
+  background-color: #0f172a;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 35px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#city-input {
+  border: none;
+  width: 500px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+#city-input::placeholder {
+  color: grey;
+}
+#search-btn {
+  width: 100px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#search-btn:hover {
+  background-color: rgb(17, 17, 220);
+}
+.search-bar {
+  display: flex;
+  gap: 10px;
 }
