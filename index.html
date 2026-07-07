@@ -9,6 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -43,37 +49,131 @@
         <section class="left-panel">
           <!-- current weather -->
           <div class="current-weather">
-            <div class="weather-header">
-              <div class="weather-icon">
-                <i class="fa-solid fa-cloud-sun"></i>
+            <div class="current-left-panel">
+              <div class="weather-header">
+                <div class="weather-icon">
+                  <i class="fa-solid fa-cloud-sun"></i>
+                </div>
               </div>
 
-              <div class="temperature">
-                <h1>32°C</h1>
+              <div class="weather-body">
+                <h2>Cloudy</h2>
+
+                <p class="location">Pune, Maharashtra</p>
+
+                <p class="date">Saturday, 5 July</p>
+              </div>
+
+              <div class="weather-footer">
+                <span>H : 34°C</span>
+
+                <span>L : 27°C</span>
               </div>
             </div>
-
-            <div class="weather-body">
-              <h2>Cloudy</h2>
-
-              <p class="location">Pune, Maharashtra</p>
-
-              <p class="date">Saturday, 5 July</p>
-            </div>
-
-            <div class="weather-footer">
-              <span>H:34°C</span>
-
-              <span>L:27°C</span>
+            <div class="current-right-panel">
+              <h1>32°C</h1>
             </div>
           </div>
           <!-- weather details -->
-          <div class="weather-details"></div>
+          <div class="weather-details">
+            <div class="weather-details-div">
+              <i class="fa-solid fa-temperature-half"></i>
+              <p>Feels Like</p>
+              <h3>18°C</h3>
+            </div>
+            <div class="weather-details-div">
+              <i class="fa-solid fa-droplet"></i>
+              <p>Humidity</p>
+              <h3>46%</h3>
+            </div>
+            <div class="weather-details-div">
+              <i class="fa-solid fa-wind"></i>
+              <p>Wind</p>
+              <h3>18 km/h</h3>
+            </div>
+            <div class="weather-details-div">
+              <i class="fa-solid fa-cloud-rain"></i>
+              <p>Precipitation</p>
+              <h3>0 mm</h3>
+            </div>
+          </div>
           <!-- Daily forecast -->
-          <div class="daily-forecast"></div>
+          <div class="daily-forecast">
+            <div class="weather-forecast-div">
+              <div><i class="fa-solid fa-sun"></i></div>
+              <p>Mon</p>
+              <h3>32°C</h3>
+            </div>
+            <div class="weather-forecast-div">
+              <div><i class="fa-solid fa-cloud-sun"></i></div>
+              <p>Tue</p>
+              <h3>30°C</h3>
+            </div>
+            <div class="weather-forecast-div">
+              <div><i class="fa-solid fa-cloud"></i></div>
+              <p>Wed</p>
+              <h3>28°C</h3>
+            </div>
+            <div class="weather-forecast-div">
+              <div><i class="fa-solid fa-cloud-rain"></i></div>
+              <p>Thu</p>
+              <h3>26°C</h3>
+            </div>
+            <div class="weather-forecast-div">
+              <div><i class="fa-solid fa-sun"></i></div>
+              <p>Fri</p>
+              <h3>28°C</h3>
+            </div>
+            <div class="weather-forecast-div">
+              <div><i class="fa-solid fa-cloud-sun"></i></div>
+              <p>Sat</p>
+              <h3>30°C</h3>
+            </div>
+            <div class="weather-forecast-div">
+              <div><i class="fa-solid fa-cloud"></i></div>
+              <p>Sun</p>
+              <h3>32°C</h3>
+            </div>
+          </div>
         </section>
         <!-- Hourly forecast -->
-        <aside class="hourly-forecast"></aside>
+        <aside class="hourly-forecast">
+          <div class="hourly-forecast-div">
+            <i class="fa-solid fa-sun"></i>
+            <p>12 PM</p>
+            <h3>32°C</h3>
+          </div>
+          <div class="hourly-forecast-div">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p>1 PM</p>
+            <h3>30°C</h3>
+          </div>
+          <div class="hourly-forecast-div">
+            <i class="fa-solid fa-cloud"></i>
+            <p>2 PM</p>
+            <h3>28°C</h3>
+          </div>
+          <div class="hourly-forecast-div">
+            <i class="fa-solid fa-cloud-rain"></i>
+            <p>3 PM</p>
+            <h3>26°C</h3>
+          </div>
+          <div class="hourly-forecast-div">
+            <i class="fa-solid fa-sun"></i>
+            <p>4 PM</p>
+            <h3>28°C</h3>
+          </div>
+          <div class="hourly-forecast-div">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p>5 PM</p>
+            <h3>30°C</h3>
+          </div>
+          <div class="hourly-forecast-div">
+            <i class="fa-solid fa-cloud"></i>
+            <p>6 PM</p>
+            <h3>28°C</h3>
+          </div>
+        </aside>
       </section>
     </div>
     <script src="script.js"></script>
