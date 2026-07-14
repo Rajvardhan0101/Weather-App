@@ -33,7 +33,7 @@
       <section class="hero">
         <h1>How's the sky looking today?</h1>
 
-        <form class="search-bar">
+        <form id="search-form" class="search-bar">
           <input
             type="text"
             placeholder="Search for a city..."
@@ -51,27 +51,27 @@
           <div class="current-weather">
             <div class="current-left-panel">
               <div class="weather-header">
-                <div class="weather-icon">
+                <div id="weather-icon">
                   <i class="fa-solid fa-cloud-sun"></i>
                 </div>
               </div>
 
               <div class="weather-body">
-                <h2>Cloudy</h2>
+                <h2 id="weather-condition">Cloudy</h2>
 
-                <p class="location">Pune, Maharashtra</p>
+                <p id="location">Pune, Maharashtra</p>
 
-                <p class="date">Saturday, 5 July</p>
+                <p id="date">Saturday, 5 July</p>
               </div>
 
               <div class="weather-footer">
-                <span>H : 34°C</span>
+                <span id="high-temp">H : 34°C</span>
 
-                <span>L : 27°C</span>
+                <span id="low-temp">L : 27°C</span>
               </div>
             </div>
             <div class="current-right-panel">
-              <h1>32°C</h1>
+              <h1 id="temperature">32°C</h1>
             </div>
           </div>
           <!-- weather details -->
@@ -79,22 +79,22 @@
             <div class="weather-details-div">
               <i class="fa-solid fa-temperature-half"></i>
               <p>Feels Like</p>
-              <h3>18°C</h3>
+              <h3 id="feels-like">18°C</h3>
             </div>
             <div class="weather-details-div">
               <i class="fa-solid fa-droplet"></i>
               <p>Humidity</p>
-              <h3>46%</h3>
+              <h3 id="humidity">46%</h3>
             </div>
             <div class="weather-details-div">
               <i class="fa-solid fa-wind"></i>
               <p>Wind</p>
-              <h3>18 km/h</h3>
+              <h3 id="wind-speed">18 km/h</h3>
             </div>
             <div class="weather-details-div">
               <i class="fa-solid fa-cloud-rain"></i>
               <p>Precipitation</p>
-              <h3>0 mm</h3>
+              <h3 id="precipitation">0 mm</h3>
             </div>
           </div>
           <!-- Daily forecast -->
@@ -102,85 +102,14 @@
             <div class="daily-forecast-header">
               <h3>Daily Forecast</h3>
             </div>
-            <div class="daily-forecast-body">
-              <div class="weather-forecast-div">
-                <div><i class="fa-solid fa-sun"></i></div>
-                <p>Mon</p>
-                <h3>32°C</h3>
-              </div>
-              <div class="weather-forecast-div">
-                <div><i class="fa-solid fa-cloud-sun"></i></div>
-                <p>Tue</p>
-                <h3>30°C</h3>
-              </div>
-              <div class="weather-forecast-div">
-                <div><i class="fa-solid fa-cloud"></i></div>
-                <p>Wed</p>
-                <h3>28°C</h3>
-              </div>
-              <div class="weather-forecast-div">
-                <div><i class="fa-solid fa-cloud-rain"></i></div>
-                <p>Thu</p>
-                <h3>26°C</h3>
-              </div>
-              <div class="weather-forecast-div">
-                <div><i class="fa-solid fa-sun"></i></div>
-                <p>Fri</p>
-                <h3>28°C</h3>
-              </div>
-              <div class="weather-forecast-div">
-                <div><i class="fa-solid fa-cloud-sun"></i></div>
-                <p>Sat</p>
-                <h3>30°C</h3>
-              </div>
-              <div class="weather-forecast-div">
-                <div><i class="fa-solid fa-cloud"></i></div>
-                <p>Sun</p>
-                <h3>32°C</h3>
-              </div>
-            </div>
+            <div id="daily-forecast-body"></div>
           </div>
         </section>
         <!-- Hourly forecast -->
         <aside class="hourly-forecast">
-          <div>
-            <h3>Hourly Forecast</h3>
-          </div>
-          <div class="hourly-forecast-div">
-            <i class="fa-solid fa-sun"></i>
-            <p>12 PM</p>
-            <h3>32°C</h3>
-          </div>
-          <div class="hourly-forecast-div">
-            <i class="fa-solid fa-cloud-sun"></i>
-            <p>1 PM</p>
-            <h3>30°C</h3>
-          </div>
-          <div class="hourly-forecast-div">
-            <i class="fa-solid fa-cloud"></i>
-            <p>2 PM</p>
-            <h3>28°C</h3>
-          </div>
-          <div class="hourly-forecast-div">
-            <i class="fa-solid fa-cloud-rain"></i>
-            <p>3 PM</p>
-            <h3>26°C</h3>
-          </div>
-          <div class="hourly-forecast-div">
-            <i class="fa-solid fa-sun"></i>
-            <p>4 PM</p>
-            <h3>28°C</h3>
-          </div>
-          <div class="hourly-forecast-div">
-            <i class="fa-solid fa-cloud-sun"></i>
-            <p>5 PM</p>
-            <h3>30°C</h3>
-          </div>
-          <div class="hourly-forecast-div">
-            <i class="fa-solid fa-cloud"></i>
-            <p>6 PM</p>
-            <h3>28°C</h3>
-          </div>
+          <h3>Hourly Forecast</h3>
+
+          <div id="hourly-container"></div>
         </aside>
       </section>
     </div>
